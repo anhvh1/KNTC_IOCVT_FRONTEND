@@ -1,0 +1,17 @@
+const actions = {
+  GETBAOCAOKQGQ04_INIT_REQUEST: 'GETBAOCAOKQGQ04_INIT_REQUEST',
+  GETBAOCAOKQGQ04_INIT_REQUEST_SUCCESS: 'GETBAOCAOKQGQ04_INIT_REQUEST_SUCCESS',
+  GETBAOCAOKQGQ04_INIT_REQUEST_ERROR: 'GETBAOCAOKQGQ04_INIT_REQUEST_ERROR',
+
+  CLEAR_DATA_BAOCAO: 'CLEAR_DATA_BAOCAO',
+  getData: (filterData) => ({
+    type: actions.GETBAOCAOKQGQ04_INIT_REQUEST,
+    payload: {filterData},
+  }),
+
+  clearData: () => ({
+    type: actions.CLEAR_DATA_BAOCAO,
+  }),
+};
+
+export default actions;

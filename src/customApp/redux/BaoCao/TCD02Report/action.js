@@ -1,0 +1,17 @@
+const actions = {
+  GETBAOCAOTCD02_INIT_REQUEST: 'GETBAOCAOTCD02_INIT_REQUEST',
+  GETBAOCAOTCD02_INIT_REQUEST_SUCCESS: 'GETBAOCAOTCD02_INIT_REQUEST_SUCCESS',
+  GETBAOCAOTCD02_INIT_REQUEST_ERROR: 'GETBAOCAOTCD02_INIT_REQUEST_ERROR',
+
+  CLEAR_DATA_BAOCAO: 'CLEAR_DATA_BAOCAO',
+  getData: (filterData) => ({
+    type: actions.GETBAOCAOTCD02_INIT_REQUEST,
+    payload: {filterData},
+  }),
+
+  clearData: () => ({
+    type: actions.CLEAR_DATA_BAOCAO,
+  }),
+};
+
+export default actions;
